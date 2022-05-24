@@ -1,4 +1,5 @@
-all: book1 book2 book3 book4 book5 book6 book7
+all: book1 book2 book3 book4 book5 book6 book7 book8 book9 \
+	 book10 book11 book12 book13 book14 book15 book16
 
 book1: book1.cpp
 	g++ -g -o book1 book1.cpp -lpthread
@@ -21,5 +22,33 @@ book6: book6.cpp
 book7: book7.cpp
 	g++ -g -o book7 book7.cpp -lpthread
 
+book8: book8.cpp
+	g++ -g -o book8 book8.cpp -lpthread
+
+book9: book9.cpp
+	g++ -g -o book9 book9.cpp -lpthread
+
+book10: book10.cpp
+	g++ -g -o book10 book10.cpp -lpthread
+
+book11: book11.cpp
+	g++ -g -o book11 book11.cpp -lpthread
+
+book12: book12.cpp
+	g++ -g -o book12 book12.cpp -lpthread
+
+book13: book13.cpp
+	g++ -g -o book13 book13.cpp -lpthread
+
+book14: book14.cpp
+	g++ -g -o book14 book14.cpp -lpthread
+
+book15: book15.cpp
+	g++ -g -o book15 book15.cpp -lpthread
+
+book16: book16.cpp
+	g++ -g -o book16 book16.cpp -lpthread
+
 clean:
-	rm book1 book2 book3 book4 book5 book6 book7
+	rm book1 book2 book3 book4 book5 book6 book7 book8 book9
+	rm book10 book11 book12 book13 book14 book15 book16
