@@ -19,7 +19,7 @@ MYSQLCPP = /project/public/db/mysql/_mysql.cpp
 # 编译参数。
 CFLAGS = -g 
 
-all: crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsurfdata4
+all: crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsurfdata4 crtsurfdata5
 
 crtsurfdata1: crtsurfdata1.cpp
 	g++ $(CFLAGS) -o crtsurfdata1 crtsurfdata1.cpp $(PUBINCL) $(PUBCPP) -lm -lc
@@ -37,5 +37,9 @@ crtsurfdata4: crtsurfdata4.cpp
 	g++ $(CFLAGS) -o crtsurfdata4 crtsurfdata4.cpp $(PUBINCL) $(PUBCPP) -lm -lc
 	cp crtsurfdata4 ../bin/.
 
+crtsurfdata5: crtsurfdata5.cpp
+	g++ $(CFLAGS) -o crtsurfdata5 crtsurfdata5.cpp $(PUBINCL) $(PUBCPP) -lm -lc
+	cp crtsurfdata5 ../bin/.
+
 clean:
-	rm -f crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsufdata4
+	rm -f crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsufdata4 crtsufdata5
