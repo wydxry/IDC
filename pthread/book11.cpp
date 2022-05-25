@@ -9,7 +9,8 @@
 
 void *func(void *arg);
 
-int var = 0;
+// int var = 0;
+std::atomic<int> var;
 
 int main(int argc, char const *argv[])
 {
@@ -28,11 +29,12 @@ int main(int argc, char const *argv[])
     // 等待子线程退出。
     printf("join...\n");
     pthread_join(tid1, NULL);  
-    pthread_join(tid2, NULL);  
+    pthread_join(tid2, NULL);
     printf("join ok.\n");
 
-    printf("var = %d\n", var);
-    // std::cout << "var = " << var << std::endl;
+    // printf("var = %d\n", var);
+    
+    std::cout << "var = " << var << std::endl;
 
     return 0;
 }
@@ -41,6 +43,6 @@ int main(int argc, char const *argv[])
 void *func(void *arg) {
     for (int i = 0; i < 100000; i++) {
         var++;
-        __sync_fetch_and_add(&var, 1);
+        // __sync_fetch_and_add(&var, 1);
     }
 }
