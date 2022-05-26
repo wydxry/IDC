@@ -89,7 +89,9 @@ int main(int argc, char const *argv[])
                 perror("recv");
                 break;
             }
-            printf("服务器端接收信息：%s\n", recvbuf);
+            
+            // printf("服务器端接收信息：%s\n", recvbuf);
+            logfile.Write("服务器端接收信息：%s\n", recvbuf);
 
             // 处理业务的主函数
             if (_main(recvbuf, sendbuf) == false) {
@@ -106,6 +108,7 @@ int main(int argc, char const *argv[])
             // printf("服务器端发送信息：%s\n", sendbuf);
             logfile.Write("服务器端发送信息：%s\n", sendbuf);
         }
+
         ChldEXIT(0);
     }
     
@@ -148,7 +151,7 @@ bool _main(const char *recvbuf, char *sendbuf) {
 
     cout << "isrvcode: " << isrvcode << endl;
 
-    GetXMLBuffer(recvbuf, "srvdode", &isrvcode);
+    GetXMLBuffer(recvbuf, "srvcode", &isrvcode);
 
     if ((isrvcode != 1) && (bsession == false)) {
         strcpy(sendbuf, "<retcode>-1</retcode><message>用户未登录。</message>"); 
@@ -186,6 +189,9 @@ bool srv001(const char *recvbuf, char *sendbuf) {
     GetXMLBuffer(recvbuf, "tel", tel, 20);
     GetXMLBuffer(recvbuf, "password", passwd, 30);
 
+    logfile.Write("tel: %s\n", tel);
+    logfile.Write("password: %s\n", passwd);
+    
     printf("tel: %s\n", tel);
     printf("password: %s\n", passwd);
 
@@ -197,6 +203,7 @@ bool srv001(const char *recvbuf, char *sendbuf) {
     } else {
         strcpy(sendbuf, "<retcode>-1</retcode><message>失败。</message>");
     }
+
     return true;
 }
 
