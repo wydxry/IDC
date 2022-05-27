@@ -31,8 +31,8 @@ bool srv003(const char *recvbuf, char *sendbuf);
 
 int main(int argc, char const *argv[])
 {
-    if (argc != 3) {
-        printf("Using:./demo12 port logfile\nExample:./demo12 5005 /tmp/demo12.log\n\n");
+    if (argc != 4) {
+        printf("Using:./demo14 port logfile timeout\nExample:./demo14 5005 /tmp/demo14.log 35\n\n"); 
         return -1;
     }
 
@@ -88,7 +88,7 @@ int main(int argc, char const *argv[])
             memset(sendbuf, 0, sizeof sendbuf);
 
             // 接收客户端的请求报文
-            if (TcpServer.Read(recvbuf) == false) {
+            if (TcpServer.Read(recvbuf, atoi(argv[3])) == false) {
                 perror("recv");
                 break;
             }
