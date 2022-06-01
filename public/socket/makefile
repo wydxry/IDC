@@ -1,6 +1,6 @@
 all: demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 \
 	demo11 demo12 demo13 demo14 demo15 demo16 demo17 demo19 demo20 \
-	demo21
+	demo21 client tcpselect
 
 demo01: demo01.cpp
 	g++ -g -o demo01 demo01.cpp -lm -lc
@@ -59,7 +59,13 @@ demo20: demo20.cpp
 demo21: demo21.cpp
 	g++ -g -o demo21 demo21.cpp ../_public.cpp -lm -lc
 
+client:client.cpp
+	g++ -g -o client client.cpp ../_public.cpp -lm -lc
+
+tcpselect:tcpselect.cpp
+	g++ -g -o tcpselect tcpselect.cpp ../_public.cpp -lm -lc
+
 clean:
 	rm -f demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 
 	rm -f demo11 demo12 demo13 demo14 demo15 demo16 demo17 demo19 demo20
-	rm -f demo21
+	rm -f demo21 client tcpselect
