@@ -1,5 +1,5 @@
 all: demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 \
-	demo11 demo12 demo13 demo14 demo15 demo16 demo17
+	demo11 demo12 demo13 demo14 demo15 demo16 demo17 demo19 demo20
 
 demo01: demo01.cpp
 	g++ -g -o demo01 demo01.cpp -lm -lc
@@ -49,6 +49,12 @@ demo16: demo16.cpp
 demo17: demo17.cpp
 	g++ -g -o demo17 demo17.cpp ../_public.cpp -lm -lc
 
+demo19: demo19.cpp
+	g++ -g -o demo19 demo19.cpp ../_public.cpp -lm -lc
+
+demo20: demo20.cpp
+	g++ -g -o demo20 demo20.cpp ../_public.cpp -lm -lc
+
 clean:
 	rm -f demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 
-	rm -f demo11 demo12 demo13 demo14 demo15 demo16 demo17
+	rm -f demo11 demo12 demo13 demo14 demo15 demo16 demo17 demo19 demo20
