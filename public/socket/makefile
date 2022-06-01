@@ -1,6 +1,6 @@
 all: demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 \
 	demo11 demo12 demo13 demo14 demo15 demo16 demo17 demo19 demo20 \
-	demo21 client tcpselect
+	demo21 client tcpselect tcppoll tcpepoll
 
 demo01: demo01.cpp
 	g++ -g -o demo01 demo01.cpp -lm -lc
@@ -65,7 +65,13 @@ client:client.cpp
 tcpselect:tcpselect.cpp
 	g++ -g -o tcpselect tcpselect.cpp ../_public.cpp -lm -lc
 
+tcppoll:tcppoll.cpp
+	g++ -g -o tcppoll tcppoll.cpp ../_public.cpp -lm -lc
+
+tcpepoll:tcpepoll.cpp
+	g++ -g -o tcpepoll tcpepoll.cpp ../_public.cpp -lm -lc
+
 clean:
 	rm -f demo01 demo02 demo03 demo04 demo05 demo06 demo07 demo08 demo10 
 	rm -f demo11 demo12 demo13 demo14 demo15 demo16 demo17 demo19 demo20
-	rm -f demo21 client tcpselect
+	rm -f demo21 client tcpselect tcppoll tcpepoll
