@@ -14,7 +14,7 @@ int main(int argc,char *argv[])
 
     // 登录数据库，返回值：0-成功；其它是失败，存放了MySQL的错误代码
     // 失败代码在conn.m_cda.rc中，失败描述在conn.m_cda.message中。
-    if (conn.connecttodb("127.0.0.1,root,root,mysql,3306", "utf8") != 0) {
+    if (conn.connecttodb("127.0.0.1,root,root,testmysql,3306", "utf8") != 0) {
         printf("connect database failed.\n%s\n", conn.m_cda.message); 
         return -1;
     }
@@ -60,7 +60,7 @@ int main(int argc,char *argv[])
 
         // 为结构体变量的成员赋值
         stgirls.id = i;                                     // 超女编号
-        sprintf(stgirls.name, "%50dgirl", i + 1);           // 超女姓名
+        sprintf(stgirls.name, "西施%05dgirl", i + 1);           // 超女姓名
         stgirls.weight = i;                                 // 超女体重
         sprintf(stgirls.btime, "2022-06-03 10:00:%02d", i); // 报名时间
 
