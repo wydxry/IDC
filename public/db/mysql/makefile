@@ -9,11 +9,15 @@ MYSQLLIBS = -lmysqlclient
 
 CFLAGS=-g -Wno-write-strings
 
-all: createtable
+all: createtable inserttable
 
 createtable:createtable.cpp _mysql.h _mysql.cpp
 	g++ $(CFLAGS) -o createtable createtable.cpp $(MYSQLINCL) $(MYSQLLIB) $(MYSQLLIBS) _mysql.cpp -lm -lc
 	cp createtable ../bin/.
 
+inserttable:inserttable.cpp _mysql.h _mysql.cpp
+	g++ $(CFLAGS) -o inserttable inserttable.cpp $(MYSQLINCL) $(MYSQLLIB) $(MYSQLLIBS) _mysql.cpp -lm -lc
+	cp inserttable ../bin/.
+
 clean:
-	rm -rf createtable
+	rm -rf createtable inserttable
