@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
     logfile.Write("crtsurfdata2 开始运行。\n");
 
     // 把站点参数文件中加载到vsites容器中
-    auto res = LoadSite(argv[1]);
+    bool res = LoadSite(argv[1]);
     if (res) {
         printf("成功载入文件\n");
     } else {
@@ -107,9 +107,9 @@ bool LoadSite(const char *inifile) {
     }
 
     // 查看是否载入成功
-    for (auto& site: vsites) {
+    for (int i = 0; i < vsites.size(); i++) {
         logfile.Write("provname = %s, siteid = %s, sitename = %s, lat = %.2f, lon = %.2f, height = %.2f\n", \
-                    site.provname, site.siteid, site.sitename, site.lat, site.lon, site.height);
+                    vsites[i].provname, vsites[i].siteid, vsites[i].sitename, vsites[i].lat, vsites[i].lon, vsites[i].height);
     }
 
     return true;
