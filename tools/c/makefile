@@ -19,7 +19,7 @@ MYSQLCPP = /home/wydxry/demo/public/db/mysql/_mysql.cpp
 # 编译参数。
 CFLAGS = -g 
 
-all: procctl gzipfiles
+all: procctl gzipfiles deletefiles
 
 procctl: procctl.cpp
 	g++ -o procctl procctl.cpp
@@ -29,5 +29,9 @@ gzipfiles: gzipfiles.cpp
 	g++ $(CFLAGS) -o gzipfiles gzipfiles.cpp $(PUBINCL) $(PUBCPP) -lm -lc
 	cp gzipfiles ../bin/.
 
+deletefiles: deletefiles.cpp
+	g++ $(CFLAGS) -o deletefiles deletefiles.cpp $(PUBINCL) $(PUBCPP) -lm -lc
+	cp deletefiles ../bin/.
+
 clean:
-	rm -f procctl gzipfiles
+	rm -f procctl gzipfiles deletefiles
