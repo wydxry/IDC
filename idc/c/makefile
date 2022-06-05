@@ -19,7 +19,7 @@ MYSQLCPP = /home/wydxry/demo/public/db/mysql/_mysql.cpp
 # 编译参数。
 CFLAGS = -g 
 
-all: crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsurfdata4 crtsurfdata5 \
+all: crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsurfdata4 crtsurfdata5 crtsurfdata\
 	obtcodetodb obtmindtodb
 
 crtsurfdata1: crtsurfdata1.cpp
@@ -42,6 +42,10 @@ crtsurfdata5: crtsurfdata5.cpp
 	g++ $(CFLAGS) -o crtsurfdata5 crtsurfdata5.cpp $(PUBINCL) $(PUBCPP) -lm -lc
 	cp crtsurfdata5 ../bin/.
 
+crtsurfdata: crtsurfdata.cpp
+	g++ $(CFLAGS) -o crtsurfdata crtsurfdata.cpp $(PUBINCL) $(PUBCPP) -lm -lc
+	cp crtsurfdata ../bin/.
+
 obtcodetodb:obtcodetodb.cpp
 	g++ $(CFLAGS) -o obtcodetodb obtcodetodb.cpp $(PUBINCL) $(PUBCPP) $(MYSQLINCL) $(MYSQLLIB) $(MYSQLLIBS) $(MYSQLCPP) -lm -lc
 	cp obtcodetodb ../bin/.
@@ -51,5 +55,5 @@ obtmindtodb:obtmindtodb.cpp idcapp.h idcapp.cpp
 	cp obtmindtodb ../bin/.
 
 clean:
-	rm -f crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsurfdata4 crtsurfdata5
+	rm -f crtsurfdata1 crtsurfdata2 crtsurfdata3 crtsurfdata4 crtsurfdata5 crtsurfdata
 	rm -f obtcodetodb obtmindtodb
