@@ -1,0 +1,40 @@
+2022-06-06 10:48:59 listfilename is null.
+2022-06-06 10:49:46 ftp.login ok.
+2022-06-06 10:49:46 filename=SURF_ZH_20220605201434_4428.csv=
+2022-06-06 10:49:46 filename=SURF_ZH_20220605201434_4428.json=
+2022-06-06 10:49:46 filename=SURF_ZH_20220605201434_4428.xml=
+2022-06-06 10:49:46 filename=SURF_ZH_20220605201534_4476.csv=
+2022-06-06 10:49:46 filename=SURF_ZH_20220605201534_4476.json=
+2022-06-06 10:49:46 filename=SURF_ZH_20220605201534_4476.xml=
+2022-06-06 10:49:46 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.csv ...ok.
+2022-06-06 10:49:46 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.json ...ok.
+2022-06-06 10:49:46 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.xml ...ok.
+2022-06-06 10:49:46 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.csv ...ok.
+2022-06-06 10:49:46 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.json ...ok.
+2022-06-06 10:49:46 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.xml ...ok.
+2022-06-06 10:51:03 ftp.login ok.
+2022-06-06 10:51:03 filename=SURF_ZH_20220605201434_4428.csv=
+2022-06-06 10:51:03 filename=SURF_ZH_20220605201434_4428.json=
+2022-06-06 10:51:03 filename=SURF_ZH_20220605201434_4428.xml=
+2022-06-06 10:51:03 filename=SURF_ZH_20220605201534_4476.csv=
+2022-06-06 10:51:03 filename=SURF_ZH_20220605201534_4476.json=
+2022-06-06 10:51:03 filename=SURF_ZH_20220605201534_4476.xml=
+2022-06-06 10:51:03 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.csv ...ok.
+2022-06-06 10:51:03 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.json ...ok.
+2022-06-06 10:51:03 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.xml ...ok.
+2022-06-06 10:51:03 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.csv ...ok.
+2022-06-06 10:51:03 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.json ...ok.
+2022-06-06 10:51:03 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.xml ...ok.
+2022-06-06 10:52:02 ftp.login ok.
+2022-06-06 10:52:02 filename=SURF_ZH_20220605201434_4428.csv=
+2022-06-06 10:52:02 filename=SURF_ZH_20220605201434_4428.json=
+2022-06-06 10:52:02 filename=SURF_ZH_20220605201434_4428.xml=
+2022-06-06 10:52:02 filename=SURF_ZH_20220605201534_4476.csv=
+2022-06-06 10:52:02 filename=SURF_ZH_20220605201534_4476.json=
+2022-06-06 10:52:02 filename=SURF_ZH_20220605201534_4476.xml=
+2022-06-06 10:52:02 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.csv ...ok.
+2022-06-06 10:52:02 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.json ...ok.
+2022-06-06 10:52:02 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201434_4428.xml ...ok.
+2022-06-06 10:52:02 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.csv ...ok.
+2022-06-06 10:52:02 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.json ...ok.
+2022-06-06 10:52:02 get /home/wydxry/demo/idc/tmp/surfdata/SURF_ZH_20220605201534_4476.xml ...ok.
