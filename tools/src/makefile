@@ -19,7 +19,7 @@ MYSQLCPP = /home/wydxry/demo/public/db/mysql/_mysql.cpp
 # 编译参数。
 CFLAGS = -g 
 
-all: procctl gzipfiles deletefiles ftpgetfiles1 ftpgetfiles2 ftpgetfiles3 ftpgetfiles4
+all: procctl gzipfiles deletefiles ftpgetfiles1 ftpgetfiles2 ftpgetfiles3 ftpgetfiles4 ftpgetfiles5 ftpgetfiles
 
 procctl: procctl.cpp
 	g++ -o procctl procctl.cpp
@@ -49,5 +49,13 @@ ftpgetfiles4: ftpgetfiles4.cpp
 	g++ $(CFLAGS) -o ftpgetfiles4 ftpgetfiles4.cpp $(PUBINCL) $(PUBCPP) /home/wydxry/demo/public/libftp.a /home/wydxry/demo/public/_ftp.cpp -lm -lc
 	cp ftpgetfiles4 ../bin/.
 
+ftpgetfiles5: ftpgetfiles5.cpp
+	g++ $(CFLAGS) -o ftpgetfiles5 ftpgetfiles5.cpp $(PUBINCL) $(PUBCPP) /home/wydxry/demo/public/libftp.a /home/wydxry/demo/public/_ftp.cpp -lm -lc
+	cp ftpgetfiles5 ../bin/.
+
+ftpgetfiles: ftpgetfiles.cpp
+	g++ $(CFLAGS) -o ftpgetfiles ftpgetfiles.cpp $(PUBINCL) $(PUBCPP) /home/wydxry/demo/public/libftp.a /home/wydxry/demo/public/_ftp.cpp -lm -lc
+	cp ftpgetfiles ../bin/.
+
 clean:
-	rm -f procctl gzipfiles deletefiles ftpgetfiles1 ftpgetfiles2 ftpgetfiles3 ftpgetfiles4
+	rm -f procctl gzipfiles deletefiles ftpgetfiles1 ftpgetfiles2 ftpgetfiles3 ftpgetfiles4 ftpgetfiles5 ftpgetfiles
