@@ -228,6 +228,13 @@ bool _xmltoarg(char *strxmlbuffer)
         return false;
     }
 
+    // 已下载成功文件名清单
+    GetXMLBuffer(strxmlbuffer, "okfilename", starg.okfilename, 300);
+    if ((starg.ptype == 1) && (strlen(starg.okfilename) == 0)) {
+        logfile.Write("okfilename is null.\n");  
+        return false; 
+    }
+
     return true;
 }
 
