@@ -83,12 +83,13 @@ int main(int argc, char *argv[])
     // 小目标，把ftp服务上某目录中的文件下载到本地的目录中
     if (argc != 3) {
         _help();
-        /*../bin/ftpgetfiles4 ../../idc/log/ftpgetfiles4.log "<host>127.0.0.1:21</host><mode>1</mode>
-        <username>wydxry</username><password>1</password><remotepath>/home/wydxry/demo/idc/tmp/server</remotepath>
-        <localpath>/home/wydxry/demo/idc/tmp/client</localpath><matchname>*</matchname><ptype>3</ptype>
-        <remotepathbak>/home/wydxry/demo/idc/tmp/backup</remotepathbak>
-        <okfilename>/home/wydxry/demo/idc/tmp/data/ftpgetfiles4_surfdata.xml</okfilename>
-        <listfilename>/home/wydxry/demo/idc/tmp/ftplist/ftpgetfiles4_surfdata.list</listfilename>"
+        /*
+        ../bin/ftpgetfiles5 ../../idc/log/ftpgetfiles5.log "<host>127.0.0.1:21</host><mode>1</mode><username>wydxry</username>
+        <password>1</password><remotepath>/home/wydxry/demo/idc/tmp/server</remotepath><localpath>/home/wydxry/demo/idc/tmp/client</localpath>
+        <matchname>*</matchname><ptype>1</ptype><remotepathbak>/home/wydxry/demo/idc/tmp/backup</remotepathbak>
+        <okfilename>/home/wydxry/demo/idc/tmp/data/ftpgetfiles5_surfdata.xml</okfilename>
+        <listfilename>/home/wydxry/demo/idc/tmp/ftplist/ftpgetfiles5_surfdata.list</listfilename><checkmtime>true</checkmtime>
+        <timeout>10</timeout><pname>ftpgetfiles5_surfdata</pname>"
         */
         return -1;
     }
