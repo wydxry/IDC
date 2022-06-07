@@ -397,7 +397,7 @@ bool CompVector()
             }
         }
         // 如果没有找到，把记录放入vlistfile4
-        if (flag) {
+        if (!flag) {
             vlistfile4.push_back(vlistfile2[i]);
         }
     }
