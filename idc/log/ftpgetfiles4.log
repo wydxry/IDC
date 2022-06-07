@@ -1,0 +1,10 @@
+2022-06-06 21:52:20 ftp.login ok.
+2022-06-06 21:52:20 _ftpgetfiles() ok.
+2022-06-06 21:52:50 ftp.login ok.
+2022-06-06 21:52:50 filename = 1.txt
+2022-06-06 21:52:50 filename = 2.txt
+2022-06-06 21:52:50 filename = 3.txt
+2022-06-06 21:52:50 get /home/wydxry/demo/idc/tmp/server/1.txt ...
+2022-06-06 21:52:50 get /home/wydxry/demo/idc/tmp/server/2.txt ...
+2022-06-06 21:52:50 get /home/wydxry/demo/idc/tmp/server/3.txt ...
+2022-06-06 21:52:50 _ftpgetfiles() ok.

@@ -1,0 +1,41 @@
+2022-06-07 20:10:36 ftp.login ok.
+2022-06-07 20:10:36 filename = 1.txt mtime = 20220607200905
+2022-06-07 20:10:36 filename = 111.txt mtime = 20220607200950
+2022-06-07 20:10:36 filename = 2.txt mtime = 20220607200909
+2022-06-07 20:10:36 filename = 3.txt mtime = 20220607200914
+2022-06-07 20:10:36 filename = 4.txt mtime = 20220607200453
+2022-06-07 20:10:36 _ftpgetfiles() ok.
+2022-06-07 20:11:13 ftp.login ok.
+2022-06-07 20:11:13 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:11:13 _ftpgetfiles() ok.
+2022-06-07 20:12:14 ftp.login ok.
+2022-06-07 20:12:14 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:12:14 get /home/wydxry/demo/idc/tmp/server/1.txt ...
+2022-06-07 20:12:14 _ftpgetfiles() ok.
+2022-06-07 20:13:29 ftp.login ok.
+2022-06-07 20:13:29 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:13:29 _ftpgetfiles() ok.
+2022-06-07 20:13:42 ftp.login ok.
+2022-06-07 20:13:42 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:13:42 _ftpgetfiles() ok.
+2022-06-07 20:14:08 ftp.login ok.
+2022-06-07 20:14:08 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:14:08 _ftpgetfiles() ok.
+2022-06-07 20:14:19 ftp.login ok.
+2022-06-07 20:14:19 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:14:19 get /home/wydxry/demo/idc/tmp/server/1.txt ...
+2022-06-07 20:14:19 _ftpgetfiles() ok.
+2022-06-07 20:14:32 ftp.login ok.
+2022-06-07 20:14:32 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:14:32 get /home/wydxry/demo/idc/tmp/server/1.txt ...
+2022-06-07 20:14:32 _ftpgetfiles() ok.
+2022-06-07 20:15:12 ftp.login ok.
+2022-06-07 20:15:12 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:15:12 _ftpgetfiles() ok.
+2022-06-07 20:15:44 ftp.login ok.
+2022-06-07 20:15:44 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:15:44 get /home/wydxry/demo/idc/tmp/server/1.txt ...
+2022-06-07 20:15:44 _ftpgetfiles() ok.
+2022-06-07 20:30:52 ftp.login ok.
+2022-06-07 20:30:52 filename = 1.txt mtime = 20220607201111
+2022-06-07 20:30:52 _ftpgetfiles() ok.
