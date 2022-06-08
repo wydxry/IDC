@@ -426,7 +426,7 @@ bool AppendToOKFile(struct st_fileinfo *stfileinfo)
 {
     CFile File;
     
-    if (File.Open(starg.okfilename, "w") == false) {
+    if (File.Open(starg.okfilename, "a") == false) {
         logfile.Write("File.Open(%s) failed.\n", starg.okfilename); 
         return false;
     }
