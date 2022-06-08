@@ -81,12 +81,12 @@ int main(int argc, char *argv[])
     // 小目标，把ftp服务上某目录中的文件上传到本地的目录中
     if (argc != 3) {
         _help();
-        /*../bin/ftpgetfiles4 ../../idc/log/ftpgetfiles4.log "<host>127.0.0.1:21</host><mode>1</mode>
-        <username>wydxry</username><password>1</password><remotepath>/home/wydxry/demo/idc/tmp/server</remotepath>
-        <localpath>/home/wydxry/demo/idc/tmp/client</localpath><matchname>*</matchname><ptype>3</ptype>
-        <loacalpathbak>/home/wydxry/demo/idc/tmp/backup</loacalpathbak>
-        <okfilename>/home/wydxry/demo/idc/tmp/data/ftpgetfiles4_surfdata.xml</okfilename>
-        <listfilename>/home/wydxry/demo/idc/tmp/ftplist/ftpgetfiles4_surfdata.list</listfilename>"
+        /*../bin/ftpputfiles ../../idc/log/ftpputfiles.log 
+        "<host>127.0.0.1:21</host><mode>1</mode><username>wydxry</username><password>1</password>
+        <remotepath>/home/wydxry/demo/idc/tmp/server</remotepath><localpath>/home/wydxry/demo/idc/tmp/client</localpath>
+        <matchname>*</matchname><ptype>1</ptype><localpathbak>/home/wydxry/demo/idc/tmp/backup</localpathbak>
+        <okfilename>/home/wydxry/demo/idc/tmp/data/ftpputfiles_surfdata.xml</okfilename><timeout>80</timeout>
+        <pname>ftppufiles_surfdata</pname>"
         */
         return -1;
     }
