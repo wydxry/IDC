@@ -3,8 +3,8 @@
 ####################################################################
 
 killall -9 procctl
-killall gzipfiles crtsurfdata deletefiles ftpgetfiles ftpputfiles
+killall gzipfiles crtsurfdata deletefiles ftpgetfiles ftpputfiles tcpputfiles tcpgetfiles fileserver
 
 sleep 3
 
-killall -9 gzipfiles crtsurfdata deletefiles ftpgetfiles ftpputfiles
+killall -9 gzipfiles crtsurfdata deletefiles ftpgetfiles ftpputfiles tcpputfiles tcpgetfiles fileserver
