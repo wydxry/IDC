@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     }
 
     // 创建线程
-    if (pthread_create(&thid1, NULL, thmain2, NULL) != 0) {
+    if (pthread_create(&thid2, NULL, thmain2, NULL) != 0) {
         printf("pthread_create failed.\n");
         exit(-1);
     }

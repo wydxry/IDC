@@ -26,25 +26,25 @@ int main(int argc, char const *argv[])
     }
 
     var = 2;
-    if (pthread_create(&tid1, NULL, thmain2, (void *)(long)var) != 0) {
+    if (pthread_create(&tid2, NULL, thmain2, (void *)(long)var) != 0) {
         printf("pthread_craete failed.\n");
         exit(-1);
     }
     
     var = 3;
-    if (pthread_create(&tid1, NULL, thmain3, (void *)(long)var) != 0) {
+    if (pthread_create(&tid3, NULL, thmain3, (void *)(long)var) != 0) {
         printf("pthread_craete failed.\n");
         exit(-1);
     }
 
     var = 4;
-    if (pthread_create(&tid1, NULL, thmain4, (void *)(long)var) != 0) {
+    if (pthread_create(&tid4, NULL, thmain4, (void *)(long)var) != 0) {
         printf("pthread_craete failed.\n");
         exit(-1);
     }
 
     var = 5;
-    if (pthread_create(&tid1, NULL, thmain5, (void *)(long)var) != 0) {
+    if (pthread_create(&tid5, NULL, thmain5, (void *)(long)var) != 0) {
         printf("pthread_craete failed.\n");
         exit(-1);
     }
