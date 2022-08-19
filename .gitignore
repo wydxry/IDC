@@ -1,0 +1,6 @@
+.vscode
+*log
+*.xml
+*.json
+*.csv
+*.log
